@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EliteTime Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+    }
+
+    .header {
+      background-color: #232b2b;
+      padding: 10px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      background-color: #0066cc;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      font-size: 16px;
+    }
+
+    .navbar a:hover {
+      background-color: #004a99;
+      border-radius: 5px;
+    }
+
+    .container {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .product-title {
+      font-size: 24px;
+      margin: 10px 0;
+    }
+
+    .product-price {
+      font-size: 20px;
+      color: #e60000;
+      margin: 10px 0;
+    }
+
+    .product-price del {
+      color: #888;
+      font-size: 16px;
+      margin-right: 10px;
+    }
+
+    .delivery-info {
+      font-size: 16px;
+      color: #0066cc;
+      margin-top: 10px;
+      font-weight: 600;
+    }
+
+    .carousel {
+      position: relative;
+      max-width: 400px;
+      margin: 20px auto;
+      overflow: hidden;
+      border-radius: 8px;
+    }
+
+    .carousel img {
+      width: 100%;
+      display: none;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .carousel img.active {
+      display: block;
+    }
+
+    .carousel .prev, .carousel .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 18px;
+      color: #0066cc;
+      background-color: white;
+      border: none;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      cursor: pointer;
+    }
+
+    .carousel .prev {
+      left: 10px;
+    }
+
+    .carousel .next {
+      right: 10px;
+    }
+
+    .btn {
+      background-color: #0066cc;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .btn:hover {
+      background-color: #004a99;
+    }
+
+    .details {
+      margin-top: 30px;
+      text-align: left;
+      padding: 0 20px;
+    }
+
+    .details h3 {
+      color: #0066cc;
+    }
+
+    .details p {
+      line-height: 1.5;
+    }
+
+    .form-link {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .form-link h3 {
+      color: #e60000;
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 600px) {
+      .container {
+        padding: 10px;
+      }
+
+      .carousel {
+        max-width: 100%;
+      }
+
+      .navbar {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .navbar a {
+        margin: 5px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>EliteTime Store</h1>
+  </div>
+
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">Product</a>
+    <a href="#">Order Now</a>
+  </div>
+
+  <div class="container">
+    <h2 class="product-title">Men's Water Resistant Quartz Watch</h2>
+    <p class="product-price">
+      <del>PKR 4,550</del>
+      <span>PKR 3,999</span>
+    </p>
+    <p class="delivery-info">Free Home Delivery 🚚</p>
+
+    <div class="carousel">
+      <img src="https://i.imgur.com/3Fnz7xT.jpeg" class="active" alt="Watch Image 1">
+      <img src="https://i.imgur.com/PJ0BVoM.jpeg" alt="Watch Image 2">
+      <img src="https://i.imgur.com/OxcP31X.jpeg" alt="Watch Image 3">
+      <img src="https://i.imgur.com/9bq8vOv.jpeg" alt="Watch Image 4">
+      <button class="prev" aria-label="Previous Image">&#10094;</button>
+      <button class="next" aria-label="Next Image">&#10095;</button>
+    </div>
+
+    <a href="https://forms.gle/M5XQtYtjYgwTvXdy8" target="_blank" class="btn">Order Now</a>
+  </div>
+
+  <div class="details">
+    <h3>Product Details</h3>
+    <p><strong>Material:</strong> Stainless Steel</p>
+    <p><strong>Pattern:</strong> Plain Strap</p>
+    <p><strong>Gender:</strong> Men's</p>
+    <p><strong>Watch Case Shape:</strong> Round</p>
+    <p><strong>Display Format:</strong> 12-Hour Format</p>
+    <p><strong>Product Feature:</strong> Movement: Quartz, Water Resistant</p>
+    <p><strong>Width:</strong> Inches</p>
+    <p><strong>Number Of Pieces:</strong> 1 Pc</p>
+    <p><strong>Color:</strong> Golden</p>
+    <p><strong>Package Includes:</strong> 1 x Analogue Watch</p>
+    <p><strong>Dial Diameter:</strong> 38 mm</p>
+    <p><strong>Note:</strong> There might be slight color differences as a result of varying lighting and monitor effects.</p>
+  </div>
+
+  <div class="form-link">
+    <h3>Don't Miss The Discount, Stock Is Limited!</h3>
+    <a href="https://forms.gle/M5XQtYtjYgwTvXdy8" target="_blank" class="btn">Order Now</a>
+  </div>
+
+  <script>
+    const images = document.querySelectorAll('.carousel img');
+    const prev = document.querySelector('.prev');
+    const next = document.querySelector('.next');
+    let index = 0;
+
+    // Auto-rotate images
+    function autoRotate() {
+      images[index].classList.remove('active');
+      index = (index + 1) % images.length;
+      images[index].classList.add('active');
+    }
+
+    // Manual navigation
+    prev.addEventListener('click', () => {
+      images[index].classList.remove('active');
+      index = (index - 1 + images.length) % images.length;
+      images[index].classList.add('active');
+    });
+
+    next.addEventListener('click', () => {
+      images[index].classList.remove('active');
+      index = (index + 1) % images.length;
+      images[index].classList.add('active');
+    });
+
+    // Start auto-rotation
+    setInterval(autoRotate, 3000);
+  </script>
+</body>
+</html>
